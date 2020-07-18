@@ -1,0 +1,51 @@
+@model Student
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+     <link rel="stylesheet" href="~/wwwroot/style.css">
+</head>
+<body>
+        <div class="container mt-4">
+        <div class="card mx-auto">
+            <div class="card-header">
+               Başvuru Formu
+            </div>
+            <div class="card-body">
+            <form asp-action="Apply" method="POST">
+            <div asp-validation-summary="All"></div>
+            <div>
+                <label asp-for="Name">Adınız</label>
+                <input asp-for="Name" class="form-control">
+            </div>
+            <div>
+                <label asp-for="Email">Eposta</label>
+                <input  asp-for="Email" class="form-control">
+                 </div>
+            <div>
+                <label asp-for="Phone">Telefon</label>
+                <input asp-for="Phone" class="form-control">
+            </div>
+            <div>
+                <label asp-for="Confirm">Kursa Katılacak mısınız</label>
+                <select asp-for="Confirm" class="form-control">
+                    <option value="true">Evet,Geliyorum</option>
+                    <option value="false">Malesef,Gelemiyorum</option>
+                </select>
+            </div>
+             <input type="submit" value="Gönder" class="btn btn-primary btn-block">
+        </form>
+            </div>
+        </div>
+    </div>
+
+        
+        
+       
+        
+       
+</body>
+</html>

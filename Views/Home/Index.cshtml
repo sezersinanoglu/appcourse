@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+</head>   
+<body>
+
+    <div class="container mt-4">
+        <div class="card mx-auto">
+            <div class="card-header">
+                <p>@ViewBag.Greeting @ViewBag.UserName, Nasılsın</p>
+            </div>
+            <div class="card-body">
+                 <p class="card-text">Umarım Kurslarımızdan Memnunsundur...</p>
+                 <a asp-action="apply" asp-controller="course" class="btn btn-primary">Başvuru Formu</a>
+            </div>
+        </div>
+    </div>
+
+
+   
+  
+</body>
+</html>
